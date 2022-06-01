@@ -52,8 +52,9 @@ Here's a list of terms that require discussion/agreement, with a link to the iss
 
 If you encounter one of those expressions for the first time, it might be worth checking the issue to find out what's the current quorum around how we should handle a consistent translation across the whole website.
 
-- `to render` 
-- `refactor` 
-- `event handler` 
-- `event listener`
-- `mount` and `unmount` 
+
+- `to render` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `refactor`  (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `event handler` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `event listener` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `mount` and `unmount` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
