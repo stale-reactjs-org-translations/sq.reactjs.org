@@ -4,7 +4,7 @@
 >
 > Ky udhezues per stilin eshte i bazuar ne [Universal Style Guide](https://github.com/reactjs/reactjs.org-translation/blob/master/style-guide.md)
 
-Ky udhëzues per stilin përshkruan rregullat që duhet të zbatohen për ** të gjitha ** gjuhët.
+Ky udhëzues per stilin përshkruan rregullat që duhet të zbatohen për **të gjitha** gjuhët.
 
 ## Fjalorth
 
