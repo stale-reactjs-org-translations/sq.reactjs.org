@@ -4,7 +4,8 @@ title: Start a New React Project
 
 <Intro>
 
-If you're starting a new project, we recommend to use a toolchain or a framework. These tools provide a comfortable development environment but require a local Node.js installation.
+Nëse po filloni një projekt të ri, ju rekomandojmë të përdorni një toolchain ose një framework. Këto mjete ofrojnë një mjedis të rehatshëm zhvillimi, por kërkojnë një instalim në nivel 
+lokal të Node.js.
 
 </Intro>
 
