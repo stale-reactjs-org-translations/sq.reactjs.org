@@ -10,7 +10,7 @@ Glossary of the translations of technical and React-specific terms.
 - footer
 - bug
 - browser
-- client
+- client/client-side
 - server
 - array
 - alert

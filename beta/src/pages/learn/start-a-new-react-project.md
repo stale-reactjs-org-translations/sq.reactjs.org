@@ -1,36 +1,41 @@
 ---
-title: Start a New React Project
+title: Filloni një projekt të ri me React
 ---
 
 <Intro>
 
-Nëse po filloni një projekt të ri, ju rekomandojmë të përdorni një toolchain ose një framework. Këto mjete ofrojnë një mjedis të rehatshëm zhvillimi, por kërkojnë një instalim në nivel 
-lokal të Node.js.
+Nëse po filloni një projekt të ri, ju rekomandojmë të përdorni një *toolchain* ose një *framework*. Këto mjete ofrojnë një mjedis të rehatshëm zhvillimi, por kërkojnë një instalim në nivel lokal të Node.js.
+
+*Toolchain* është grup mjetesh për zhvillimin e softuerit të përdorur në kombinim me njëri-tjetrin për të përfunduar detyra komplekse të zhvillimit të softuerit.
+*Framework* në programim është një mjet që ofron komponentë të gatshëm ose zgjidhje që janë të personalizuara për të përshpejtuar zhvillimin.
+
 
 </Intro>
 
 <YouWillLearn>
 
-* How toolchains are different from frameworks
-* How to start a project with a minimal toolchain
-* How to start a project with a fully-featured framework
-* What's inside popular toolchains and frameworks
+* Si ndryshojnë toolchains nga frameworks
+* Si të filloni një projekt me toolchain minimal
+* Si të filloni një projekt me një framework me funksione të plota
+* Çfarë ka në brendi të toolchain-ëve dhe framework-ëve më të njohur
 
 </YouWillLearn>
 
-## Choose your own adventure {/*choose-your-own-adventure*/}
+## Zgjidhni vetë aventurën tuaj {/*choose-your-own-adventure*/}
 
-React is a library that lets you organize UI code by breaking it apart into pieces called components. React doesn't take care of routing or data management. This means there are several ways to start a new React project:
+React është një librari që ju lejon të organizoni kodin UI (ndërfaqja e përdoruesit) duke e ndarë atë në pjesë të quajtura komponentë. React nuk kujdeset për routing (rrugëzim) ose menaxhimin e të dhënave. Kjo do të thotë se ka disa mënyra për të nisur një projekt të ri me React:
 
-* [Start with an **HTML file and a script tag**.](/learn/add-react-to-a-website) This doesn't require Node.js setup but offers limited features.
-* Start with a **minimal toolchain,** adding more features to your project as you go. (Great for learning!)
-* Start with an **opinionated framework** that has common features like data fetching and routing built-in.
+* [Filloni me një **skedar HTML dhe një etiketë skripti **.](/learn/add-react-to-a-website) Kjo nuk kërkon konfigurimin e Node.js, por ofron veçori të kufizuara.
+* Filloni me një **toolchain minimal,** duke shtuar më shumë veçori në projektin tuaj me kalimin e kohës. (E shkëlqyeshme për të mësuar!)
+* Filloni me një *opinionated framework* që ka veçori të zakonshme si fetching e të dhënave (marrja e të dhënave) dhe built-in routing (rrugëzim të pre-integruar/instaluar).
 
-## Getting started with a minimal toolchain {/*getting-started-with-a-minimal-toolchain*/}
+*Opinionated Framework* është një framework i ndërtuar që t'i bëj gjërat në një mënyrë të caktuar (mënyra e duhur). Ndaj epiteti opinionated = "kokëfortë".
 
-If you're **learning React,** we recommend [Create React App](https://create-react-app.dev/). It is the most popular way to try out React and build a new single-page, client-side application. It's made for React but isn't opinionated about routing or data fetching.
+## Të fillosh me një *toolchain* minimal {/*getting-started-with-a-minimal-toolchain*/}
 
-First, install [Node.js](https://nodejs.org/en/). Then open your terminal and run this line to create a project:
+Nëse po mësoni React, ne ju rekomandojmë [Create React App](https://create-react-app.dev/). Është mënyra më e zakonshme për të provuar React dhe për të ndërtuar një aplikacion *single-page client-side* (një-faqëshe në anën e klientit). Është krijuar për React, por nuk është *opinionated* për *routing* ose *fetching* të të dhënave.
+
+Së pari, instaloni [Node.js](https://nodejs.org/en/). Pastaj hapni terminalin dhe ekzekutoni këtë rresht kodi për të krijuar një projekt:
 
 <TerminalBlock>
 
@@ -38,7 +43,7 @@ npx create-react-app my-app
 
 </TerminalBlock>
 
-Now you can run your app with:
+Tani mund ta ekzekutoni aplikacionin tuaj me:
 
 <TerminalBlock>
 
@@ -47,38 +52,38 @@ npm start
 
 </TerminalBlock>
 
-For more information, [check out the official guide](https://create-react-app.dev/docs/getting-started).
+Për më shumë informacion, [shikoni udhëzuesin zyrtar](https://create-react-app.dev/docs/getting-started).
 
-> Create React App doesn't handle backend logic or databases. You can use it with any backend. When you build a project, you'll get a folder with static HTML, CSS and JS. Because Create React App can't take advantage of the server, it doesn't provide the best performance. If you're looking for faster loading times and built-in features like routing and server-side logic, we recommend using a framework instead.
+> Create React App nuk menaxhon llogjiken e backend apo të databazës. Mund ta përdorni me çdo backend.  Kur të ndërtoni një projekt, do të keni një dosje me HTML statike, CSS dhe JS. Për shkak se Create React App nuk mund të ketë avantazhet e një serveri, ai nuk ofron performancën më të mirë. Nëse jeni duke kërkuar për kohë më të shpejta ngarkimi (*loading*) dhe veçori të integruara *routing* dhe llogjikën *server-side* (të serverit), ju rekomandojmë të përdorni një *framework*.
 
-### Popular alternatives {/*popular-alternatives*/}
+### Alternativa të përhapura {/*popular-alternatives*/}
 
 * [Vite](https://vitejs.dev/guide/)
 * [Parcel](https://parceljs.org/)
 
-## Building with a full-featured framework {/*building-with-a-full-featured-framework*/}
+## Të ndërtosh me frameworks me funksione të plota {/*building-with-a-full-featured-framework*/}
 
-If you're looking to **start a production-ready project,** [Next.js](https://nextjs.org/) is a great place to start. Next.js is a popular, lightweight framework for static and server‑rendered applications built with React. It comes pre-packaged with features like routing, styling, and server-side rendering, getting your project up and running quickly. 
+Nëse po kërkoni të **filloni një projekt të gatshëm për prodhim,** [Next.js](https://nextjs.org/) ja vlen të konsiderohet. Next.js është një framework goxha i njohur, dhe i lehtë, për aplikacionet e ndërtuara me React, që janë statike dhe *server-rendered* (gjeneruara në server). Ai vjen i para-paketuar me veçori të tilla si *routing*, *styling* (stilim), dhe *server-side rendering*, duke e bërë funksional projektin tuaj kollaj dhe shpejt.
 
-The [Next.js Foundations](https://nextjs.org/learn/foundations/about-nextjs) tutorial is a great introduction to building with React and Next.js.
+Tutoriali i [Next.js Foundations](https://nextjs.org/learn/foundations/about-nextjs) është një udhëzues i mirë si fillim, për kë do të ndërtoj me React dhe Next.js.
 
-### Popular alternatives {/*popular-alternatives*/}
+### Alternativat më të përhapura {/*popular-alternatives*/}
 
 * [Gatsby](https://www.gatsbyjs.org/)
 * [Remix](https://remix.run/)
 * [Razzle](https://razzlejs.org/)
 
-## Custom toolchains {/*custom-toolchains*/}
+## Toolchains të personalizuara {/*custom-toolchains*/}
 
-You may prefer to create and configure your own toolchain. A toolchain typically consists of:
+Ju mund të preferoni të krijoni dhe konfiguroni *toolchain*-in tuaj. Një *toolchain* zakonisht përbëhet nga:
 
-* A **package manager** lets you install, update, and manage third-party packages. Popular package managers: [npm](https://www.npmjs.com/) (built into Node.js), [Yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/).
-* A **compiler** lets you compile modern language features and additional syntax like JSX or type annotations for the browsers. Popular compilers: [Babel](https://babeljs.io/), [TypeScript](http://typescript.org/), [swc](https://swc.rs/).
-* A **bundler** lets you write modular code and bundle it together into small packages to optimize load time. Popular bundlers: [webpack](https://webpack.js.org/), [Parcel](https://parceljs.org/), [esbuild](https://esbuild.github.io/), [swc](https://swc.rs/).
-* A **minifier** makes your code more compact so that it loads faster. Popular minifiers: [Terser](https://terser.org/), [swc](https://swc.rs/).
-* A **server** handles server requests so that you can render components to HTML. Popular servers: [Express](https://expressjs.com/).
-* A **linter** checks your code for common mistakes. Popular linters: [ESLint](https://eslint.org/).
-* A **test runner** lets you run tests against your code. Popular test runners: [Jest](https://jestjs.io/).
+* Një *package manager* (menaxher paketash) ju lejon të instaloni, përditësoni dhe menaxhoni *packages* (paketat) e palëve të treta. Disa *package manager* të njohur janë: [npm](https://www.npmjs.com/) (ndërtuar në Node.js), [Yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/).
+* Një *compiler* (kompilator) ju lejon të bëni *compile* (të kompiloni) veçori të gjuhës moderne, bashkë me sintaksën si puna e JSX, apo *type annotations* (indikues të llojit të të dhënave) për *browser*-in, si: [Babel](https://babeljs.io/), [TypeScript](http://typescript.org/), [swc](https://swc.rs/).
+* Një *bundler* ju lejon të shkruani kod modular dhe ta bëni *bundle* atë, pra ta bashkoni atë në paketa të vogla për të optimizuar kohën e ngarkimit (*loading*). Disa *bundlers* të njohur janë: [webpack](https://webpack.js.org/), [Parcel](https://parceljs.org/), [esbuild](https://esbuild.github.io/), [swc](https://swc.rs/).
+* Një *minifier* (minifikues) e bën kodin tuaj më kompakt në mënyrë që të ngarkohet më shpejt. Disa *minifier* të njohur janë: [Terser](https://terser.org/), [swc](https://swc.rs/).
+* Një *server* trajton *server requests* (kërkesat e server-it) në mënyrë që të bësh *render* (gjenerosh) komponentët në HTML. Një server i njohur është: [Express](https://expressjs.com/).
+* Një *linter* kontrollon kodin tuaj për gabime të zakonshme. Një *linter* i njohur është: [ESLint](https://eslint.org/).
+* Një *test runner* (testues) ju lejon të kryeni teste për kodin tuaj. Një testues i njohur është: [Jest](https://jestjs.io/).
 
-If you prefer to set up your own JavaScript toolchain from scratch, [check out this guide](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) that re-creates some of the Create React App functionality. A framework will usually also provide a routing and a data fetching solution. In a larger project, you might also want to manage multiple packages in a single repository with a tool like [Nx](https://nx.dev/react) or [Turborepo](https://turborepo.org/).
+Nëse preferoni të konfiguroni *toolchain*-in tuaj të JavaScript nga e para, shikoni këtë udhëzues që rikrijon disa nga funksionet e aplikacionit Create React. Një *framework* zakonisht do të sigurojë gjithashtu një *routing* dhe një zgjidhje për *fetching* të të dhënave. Në një projekt më të madh, mund të dëshironi gjithashtu të menaxhoni *packages* të shumta në një *repository* (depo) të vetme me një mjet si [Nx](https://nx.dev/react) or [Turborepo](https://turborepo.org/).
 
