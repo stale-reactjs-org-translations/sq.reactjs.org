@@ -31,6 +31,8 @@ Glossary of the translations of technical and React-specific terms.
 - provider
 - consumer
 - reducer
+- deploy
+- template strings
 
 # Common Translations
 
@@ -39,12 +41,15 @@ Suggestion on words and terms:
 | Original word/term | Suggestion | 
 | ------------------ | ---------- |
 | render | gjeneron ?! (folje), gjenerim?! (emer) |
+| string | germëvarg | ref. Fjalori Cano-Tupja
 | refactor | refaktor | 
 | refactoring | rifaktorim |
+| feature | tipar, cilësi
 | React component class | klasa e komponentit React |
 | React component type | lloji i komponentit React |
-| function component | komponent funksional |
+| function component | komponent funksioni |
 | error boundary | kontejner i erroreve ?! |
+| native(ly) | prej vetiu?!
 
 ## Problematic terms
 
@@ -55,6 +60,15 @@ If you encounter one of those expressions for the first time, it might be worth 
 
 - `to render` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
 - `refactor`  (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
-- `event handler` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
-- `event listener` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `event* handler` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+- `event* listener` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
 - `mount` and `unmount` (([#44]https://github.com/reactjs/sq.reactjs.org/issues/44))
+
+*event sipas fjalorit "Terminologji Informatike" nga Erion Cano dhe Edmond Tupja:
+
+event [i’vent] em. sh.t. është fjala për një ngjarje që ndryshon apo përcakton
+ecurinë e një procesi apo dukurie. Në ligjërimin e përgjithshëm ka kuptimin e
+aktivitetit ndërsa në atë teknik mbartet mjaft mirë nga fjala ngjarje, siç ndeshet
+te [31] f. 56, te [19] f. 99, te [20] f. 40 etj. Duhet shmangur pra fjala event, e cila
+ndeshet shpesh në gjuhën e folur. Shembuj: unexpected event ngjarje e papritur,
+system failure event ngjarje e dështimit të sistemit
