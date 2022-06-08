@@ -41,7 +41,7 @@ function ExpandableExample({
           {isDeepDive && (
             <>
               <IconDeepDive className="inline mr-2 dark:text-purple-30 text-purple-40" />
-              Deep Dive
+              Më në thellësi
             </>
           )}
           {isExample && (
