@@ -1,5 +1,5 @@
 {
-  "title": "Learn React",
+  "title": "Mësoni React",
   "heading": true,
   "path": "/learn",
   "routes": [
@@ -8,19 +8,19 @@
       "path": "",
       "routes": [
         {
-          "title": "Installation",
+          "title": "Instalimi",
           "path": "/learn/installation",
           "routes": [
             {
-              "title": "Start a New React Project",
+              "title": "Filloni një projekt të ri me React",
               "path": "/learn/start-a-new-react-project"
             },
             {
-              "title": "Add React to a Website",
+              "title": "Shto React në një website",
               "path": "/learn/add-react-to-a-website"
             },
             {
-              "title": "Editor Setup",
+              "title": "Konfigurimi i redaktorit",
               "path": "/learn/editor-setup"
             },
             {
@@ -30,120 +30,120 @@
           ]
         },
         {
-          "title": "Quick Start",
+          "title": "Nisje e shpejtë",
           "path": "/learn",
           "routes": [{
-            "title": "Thinking in React",
+            "title": "Të mendosh si React",
             "path": "/learn/thinking-in-react"
           }]
         },
         {
-          "title": "Describing the UI",
+          "title": "Përshkrimi i UI",
           "tags": [],
           "path": "/learn/describing-the-ui",
           "routes": [
             {
-              "title": "Your First Component",
+              "title": "Komponenti juaj i parë",
               "path": "/learn/your-first-component"
             },
             {
-              "title": "Importing and Exporting Components",
+              "title": "Importimi dhe Eksportimi i Komponentëve",
               "path": "/learn/importing-and-exporting-components"
             },
             {
-              "title": "Writing Markup with JSX",
+              "title": "Të shkruash Markup me JSX",
               "path": "/learn/writing-markup-with-jsx"
             },
             {
-              "title": "JavaScript in JSX with Curly Braces",
+              "title": "JavaScript në JSX me kllapa Gjarpërore",
               "path": "/learn/javascript-in-jsx-with-curly-braces"
             },
             {
-              "title": "Passing Props to a Component",
+              "title": "Kalimi i Props tek një Komponent",
               "path": "/learn/passing-props-to-a-component"
             },
             {
-              "title": "Conditional Rendering",
+              "title": "Rendering i kushtëzuar",
               "path": "/learn/conditional-rendering"
             },
             {
-              "title": "Rendering Lists",
+              "title": "Rendering i Lists",
               "path": "/learn/rendering-lists"
             },
             {
-              "title": "Keeping Components Pure",
+              "title": "Mbajtja e Komponentëve Pure",
               "path": "/learn/keeping-components-pure"
             }
           ]
         },
         {
-          "title": "Adding Interactivity",
+          "title": "Shtimi i interaktivitetit",
           "path": "/learn/adding-interactivity",
           "tags": [],
           "routes": [
             {
-              "title": "Responding to Events",
+              "title": "T'i përgjigjesh Eventeve",
               "path": "/learn/responding-to-events"
             },
             {
-              "title": "State: A Component's Memory",
+              "title": "State: Memoria e Komponentit",
               "path": "/learn/state-a-components-memory"
             },
             {
-              "title": "Render and Commit",
+              "title": "Render dhe Commit",
               "path": "/learn/render-and-commit"
             },
             {
-              "title": "State as a Snapshot",
+              "title": "State si Snapshot",
               "path": "/learn/state-as-a-snapshot"
             },
             {
-              "title": "Queueing a Series of State Updates",
+              "title": "Queueing një seri të azhornimeve të State",
               "path": "/learn/queueing-a-series-of-state-updates"
             },
             {
-              "title": "Updating Objects in State",
+              "title": "Azhornimi i objekteve në State",
               "path": "/learn/updating-objects-in-state"
             },
             {
-              "title": "Updating Arrays in State",
+              "title": "Azhornimi i array në State",
               "path": "/learn/updating-arrays-in-state"
             }
           ]
         },
         {
-          "title": "Managing State",
+          "title": "Menaxhimi i State",
           "path": "/learn/managing-state",
           "tags": [
             "intermediate"
           ],
           "routes": [
             {
-              "title": "Reacting to Input with State",
+              "title": "Reagimi ndaj Input-it me State",
               "path": "/learn/reacting-to-input-with-state"
             },
             {
-              "title": "Choosing the State Structure",
+              "title": "Zgjedhja e strukturës së State",
               "path": "/learn/choosing-the-state-structure"
             },
             {
-              "title": "Sharing State Between Components",
+              "title": "Shpërnda State midis Komponentëve",
               "path": "/learn/sharing-state-between-components"
             },
             {
-              "title": "Preserving and Resetting State",
+              "title": "Ruajtja dhe rivendosja e State",
               "path": "/learn/preserving-and-resetting-state"
             },
             {
-              "title": "Extracting State Logic into a Reducer",
+              "title": "Nxjerrja e logjikës së State në një Reducer",
               "path": "/learn/extracting-state-logic-into-a-reducer"
             },
             {
-              "title": "Passing Data Deeply with Context",
+              "title": "Kalimi i të dhënave në thellësi me Context",
               "path": "/learn/passing-data-deeply-with-context"
             },
             {
-              "title": "Scaling Up with Reducer and Context",
+              "title": "Scaling Up me Reducer dhe Context",
               "path": "/learn/scaling-up-with-reducer-and-context"
             }
           ]
@@ -156,11 +156,11 @@
           ],
           "routes": [
             {
-              "title": "Referencing Values with Refs",
+              "title": "Referencimi i vlerave me Refs",
               "path": "/learn/referencing-values-with-refs"
             },
             {
-              "title": "Manipulating the DOM with Refs",
+              "title": "Manipulimi i DOM me Refs",
               "path": "/learn/manipulating-the-dom-with-refs"
             }
           ]

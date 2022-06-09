@@ -1,5 +1,5 @@
 {
-  "title": "Home",
+  "title": "Kryefaqja",
   "heading": true,
   "path": "/",
   "routes": [
@@ -8,17 +8,17 @@
       "path": "",
       "routes": [
         {
-          "title": "Overview",
+          "title": "Vështrim i përgjithshëm",
           "path": "/"
         },
         {
-          "title": "Community",
+          "title": "Komuniteti",
           "path": "/community",
           "routes": [{
-            "title": "Acknowledgements",
+            "title": "Mirënjohje",
             "path": "/community/acknowledgements"
           }, {
-            "title": "Meet the Team",
+            "title": "Njihuni me ekipin",
             "path": "/community/meet-the-team"
           }]
         }

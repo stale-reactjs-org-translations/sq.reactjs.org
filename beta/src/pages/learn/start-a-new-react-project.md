@@ -6,7 +6,7 @@ title: Filloni një projekt të ri me React
 
 Nëse po filloni një projekt të ri, ju rekomandojmë të përdorni një *toolchain* ose një *framework*. Këto mjete ofrojnë një mjedis të rehatshëm zhvillimi, por kërkojnë një instalim në nivel lokal të Node.js.
 
-*Toolchain* është grup mjetesh për zhvillimin e softuerit të përdorur në kombinim me njëri-tjetrin për të përfunduar detyra komplekse të zhvillimit të softuerit.
+*Toolchain* është një grup mjetesh për zhvillimin e softuerit të përdorur në kombinim me njëri-tjetrin për të përfunduar detyra komplekse të zhvillimit të softuerit.
 *Framework* në programim është një mjet që ofron komponentë të gatshëm ose zgjidhje që janë të personalizuara për të përshpejtuar zhvillimin.
 
 

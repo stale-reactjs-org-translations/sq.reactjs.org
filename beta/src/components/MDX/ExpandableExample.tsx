@@ -69,7 +69,7 @@ function ExpandableExample({
           <span className="mr-1">
             <IconChevron displayDirection={isExpanded ? 'up' : 'down'} />
           </span>
-          {isExpanded ? 'Hide Details' : 'Show Details'}
+          {isExpanded ? 'Fshih detajet' : 'Trego detajet'}
         </Button>
       </div>
       <div

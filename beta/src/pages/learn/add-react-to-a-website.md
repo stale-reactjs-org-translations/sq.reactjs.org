@@ -48,7 +48,7 @@ Në faqen HTML, menjëherë përpara etiketës `</body>` mbyllëse, shtoni tre e
 HTML juaj tani duhet të përfundojë kështu:
 
 ```html
-    <!-- end of the page -->
+    <!-- fundi i faqes -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="like-button.js"></script>
