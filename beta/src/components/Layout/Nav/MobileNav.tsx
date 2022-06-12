@@ -49,7 +49,7 @@ export function MobileNav() {
         <TabButton
           isActive={section === 'learn'}
           onClick={() => setSection('learn')}>
-          Mësoni
+          Mëso
         </TabButton>
         <TabButton
           isActive={section === 'apis'}

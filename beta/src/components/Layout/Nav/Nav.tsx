@@ -180,7 +180,7 @@ export default function Nav() {
           Kryefaqja
         </NavLink>
         <NavLink href="/learn" isActive={section === 'learn'}>
-          Mësoni
+          Mëso
         </NavLink>
         <NavLink href="/apis" isActive={section === 'apis'}>
           API
