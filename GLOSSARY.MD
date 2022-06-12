@@ -33,6 +33,7 @@ Glossary of the translations of technical and React-specific terms.
 - reducer
 - deploy
 - template strings
+- extensions
 
 # Common Translations
 
