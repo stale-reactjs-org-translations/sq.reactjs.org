@@ -25,7 +25,7 @@ module.exports = async function (src) {
     learn: 'Learn',
     apis: 'API',
   };
-  const layout = layoutMap[pageParentDir] || 'Kryefaqja';
+  const layout = layoutMap[pageParentDir] || 'Home';
   const code =
     `import withLayout from 'components/Layout/Layout${layout}';
 
