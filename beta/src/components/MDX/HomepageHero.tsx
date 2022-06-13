@@ -22,18 +22,18 @@ function HomepageHero() {
       </div>
       <section className="my-8 sm:my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
         <div className="flex flex-col justify-center">
-          <YouWillLearnCard title="Learn React" path="/learn">
+          <YouWillLearnCard title="Mësoni React" path="/learn">
             <p>
-              Learn how to think in React with step-by-step explanations and
-              interactive examples.
+              Mësoni se si të mendoni si React me shpjegime hap pas hapi dhe
+              shembuj ndërveprues.
             </p>
           </YouWillLearnCard>
         </div>
         <div className="flex flex-col justify-center">
-          <YouWillLearnCard title="API Reference" path="/apis">
+          <YouWillLearnCard title="Referenca API" path="/apis">
             <p>
-              Look up the API signatures of React Hooks, and see their shape
-              using the visual code diagrams.
+              Kërkoni nënshkrimet API të React Hooks dhe shikoni formën e tyre
+              duke përdorur diagramet e kodit vizual.
             </p>
           </YouWillLearnCard>
         </div>
