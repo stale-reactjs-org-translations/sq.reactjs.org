@@ -1,33 +1,33 @@
 ---
-title: React Developer Tools
+title: React Developer Tools (Mjetet e zhvilluesit të React )
 ---
 
 <Intro>
 
-Use React Developer Tools to inspect React [components](/learn/your-first-component), edit [props](/learn/passing-props-to-a-component) and [state](/learn/state-a-components-memory), and identify performance problems.
+Përdorni React *Developer Tools* (Mjetet e Zhvilluesit) për të inspektuar [komponentët](/learn/your-first-component) React, për të redaktuar [props](/learn/passing-props-to-a-component) dhe [state](/learn/state-a-components-memory), dhe për të identifikuar problemet e performancës.
 
 </Intro>
 
 <YouWillLearn>
 
-* How to install React Developer Tools
+* Si të instaloni *React Developer Tools*
 
 </YouWillLearn>
 
 ## Browser extension {/*browser-extension*/}
 
-The easiest way to debug websites built with React is to install the React Developer Tools browser extension. It is available for several popular browsers:
+Mënyra më e lehtë për të bërë *debug*  *website*-t e ndërtuara me React është të instaloni React *Developer Tools extension*. Ky është i disponueshëm për disa *browser* të njohur:
 
-* [Install for **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-* [Install for **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
-* [Install for **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
+* [Instaloni për **Chrome**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+* [Instaloni për **Firefox**](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+* [Instaloni për **Edge**](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
 
-Now, if you visit a website **built with React**, you will see the _Components_ and _Profiler_ panels.
+Tani, nëse vizitoni një *website* **të ndërtuar me React**, do të shihni panelet _Components_ dhe _Profiler_.
 
 ![React Developer Tools extension](/images/docs/react-devtools-extension.png)
 
-### Safari and other browsers {/*safari-and-other-browsers*/}
-For other browsers (for example, Safari), install the [`react-devtools`](https://www.npmjs.com/package/react-devtools) npm package:
+### Safari dhe browser-at e tjerë {/*safari-and-other-browsers*/}
+Për *browser* të tjerë (për shembull, Safari), instaloni [`react-devtools`](https://www.npmjs.com/package/react-devtools) *npm package*:
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -36,26 +36,26 @@ yarn global add react-devtools
 npm install -g react-devtools
 ```
 
-Next open the developer tools from the terminal:
+Hapni më pas *Developer Tools* nga terminali:
 ```bash
 react-devtools
 ```
 
-Then connect your website by adding the following `<script>` tag to the beginning of your website's `<head>`:
+Më pas lidhni *website*-in tuaj duke shtuar etiketën `<script>` në fillim të `<head>`:
 ```html {3}
 <html>
   <head>
     <script src="http://localhost:8097"></script>
 ```
 
-Reload your website in the browser now to view it in developer tools.
+Ringarkoni faqen në *browser* për ta parë në *developer tools*.
 
 ![React Developer Tools standalone](/images/docs/react-devtools-standalone.png)
 
 ## Mobile (React Native) {/*mobile-react-native*/}
-React Developer Tools can be used to inspect apps built with [React Native](https://reactnative.dev/) as well.
+React *Developer Tools* mund të përdoren gjithashtu për të inspektuar aplikacionet e ndërtuara me [React Native](https://reactnative.dev/).
 
-The easiest way to use React Developer Tools is to install it globally:
+Mënyra më e lehtë për të përdorur React *Developer Tools* është ta instaloni atë globalisht:
 ```bash
 # Yarn
 yarn global add react-devtools
@@ -64,13 +64,13 @@ yarn global add react-devtools
 npm install -g react-devtools
 ```
 
-Next open the developer tools from the terminal.
+Më pas hapni *developer tools* nga terminali.
 ```bash
 react-devtools
 ```
 
-It should connect to any local React Native app that's running.
+Duhet të lidhet me çdo aplikacion React Native që po funksionon në nivel lokal.
 
-> Try reloading the app if developer tools doesn't connect after a few seconds.
+> Provoni të ringarkoni aplikacionin nëse *Developer Tools* nuk lidhen pas disa sekondash.
 
-[Learn more about debugging React Native.](https://reactnative.dev/docs/debugging)
+[Mësoni më shumë rreth të bërit *debug*  React Native.](https://reactnative.dev/docs/debugging)

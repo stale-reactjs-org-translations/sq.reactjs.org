@@ -13,7 +13,7 @@ function HomepageHero() {
         <Logo className="text-link dark:text-link-dark w-20 sm:w-28 mr-4 mb-4 sm:mb-0 h-auto" />
         <div className="flex flex-wrap">
           <h1 className="text-5xl mr-4 -mt-1 flex wrap font-bold leading-tight text-primary dark:text-primary-dark">
-            React Docs
+            Dokumentacioni i React
           </h1>
           <div className="inline-flex self-center px-2 mt-1 bg-highlight dark:bg-highlight-dark w-auto rounded text-link dark:text-link-dark uppercase font-bold tracking-wide text-base whitespace-nowrap">
             Beta
@@ -22,18 +22,18 @@ function HomepageHero() {
       </div>
       <section className="my-8 sm:my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
         <div className="flex flex-col justify-center">
-          <YouWillLearnCard title="Learn React" path="/learn">
+          <YouWillLearnCard title="Mësoni React" path="/learn">
             <p>
-              Learn how to think in React with step-by-step explanations and
-              interactive examples.
+              Mësoni se si të mendoni si React me shpjegime hap pas hapi dhe
+              shembuj ndërveprues.
             </p>
           </YouWillLearnCard>
         </div>
         <div className="flex flex-col justify-center">
-          <YouWillLearnCard title="API Reference" path="/apis">
+          <YouWillLearnCard title="Referenca API" path="/apis">
             <p>
-              Look up the API signatures of React Hooks, and see their shape
-              using the visual code diagrams.
+              Kërkoni nënshkrimet API të React Hooks dhe shikoni formën e tyre
+              duke përdorur diagramet e kodit vizual.
             </p>
           </YouWillLearnCard>
         </div>
