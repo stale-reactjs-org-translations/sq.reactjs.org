@@ -30,7 +30,7 @@
           ]
         },
         {
-          "title": "Pikënisje",
+          "title": "Përdorim i shpejtë",
           "path": "/learn",
           "routes": [{
             "title": "Të mendosh si React",
@@ -47,7 +47,7 @@
               "path": "/learn/your-first-component"
             },
             {
-              "title": "Importimi dhe Eksportimi i Komponentëve",
+              "title": "Importimi dhe eksportimi i komponentëve",
               "path": "/learn/importing-and-exporting-components"
             },
             {
@@ -55,11 +55,11 @@
               "path": "/learn/writing-markup-with-jsx"
             },
             {
-              "title": "JavaScript në JSX me kllapa Gjarpërore",
+              "title": "JavaScript në JSX me kllapa gjarpërore",
               "path": "/learn/javascript-in-jsx-with-curly-braces"
             },
             {
-              "title": "Kalimi i Props tek një Komponent",
+              "title": "Kalimi i props tek një komponent",
               "path": "/learn/passing-props-to-a-component"
             },
             {
@@ -67,11 +67,11 @@
               "path": "/learn/conditional-rendering"
             },
             {
-              "title": "Rendering i Lists",
+              "title": "Rendering i Listave",
               "path": "/learn/rendering-lists"
             },
             {
-              "title": "Mbajtja e Komponentëve Pure",
+              "title": "Mbajtja e komponentëve 'pure'",
               "path": "/learn/keeping-components-pure"
             }
           ]
@@ -82,11 +82,11 @@
           "tags": [],
           "routes": [
             {
-              "title": "T'i përgjigjesh Eventeve",
+              "title": "T'i përgjigjesh eventeve",
               "path": "/learn/responding-to-events"
             },
             {
-              "title": "State: Memoria e Komponentit",
+              "title": "State: memoria e komponentit",
               "path": "/learn/state-a-components-memory"
             },
             {
@@ -94,7 +94,7 @@
               "path": "/learn/render-and-commit"
             },
             {
-              "title": "State si Snapshot",
+              "title": "State si snapshot",
               "path": "/learn/state-as-a-snapshot"
             },
             {
@@ -149,7 +149,7 @@
           ]
         },
         {
-          "title": "Escape Hatches",
+          "title": "Dalje shpëtimi",
           "path": "/learn/escape-hatches",
           "tags": [
             "advanced"
