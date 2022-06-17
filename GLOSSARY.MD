@@ -41,9 +41,12 @@ Suggestion on words and terms:
 
 | Original word/term | Suggestion | 
 | ------------------ | ---------- |
-| string | germëvarg | ref. Fjalori Cano-Tupja | Përkthimi i duhur duhet të jetë i
+| variable | ndryshore ref. Fjalori Cano-Tupja
+| string | germëvarg | ref. Fjalori Cano-Tupja | 
+| domain | domen ref. Fjalori Cano-Tupja | Përkthimi i duhur duhet të jetë i
 njëjtë me atë në kontekstin e matematikës, pra domen
-| domain | domen ref. Fjalori Cano-Tupja |
+| initialization | vlerënisja ref. Fjalori Cano-Tupja
+| update | përditësoj (folje), përditësim (emer)
 | render | gjeneron ?! (folje), gjenerim?! (emer) |
 | refactor | refaktor | 
 | refactoring | rifaktorim |
@@ -53,6 +56,7 @@ njëjtë me atë në kontekstin e matematikës, pra domen
 | function component | komponent funksioni |
 | error boundary | kontejner i erroreve ?! |
 | native(ly) | prej vetiu?!
+
 
 
 ## Problematic terms
