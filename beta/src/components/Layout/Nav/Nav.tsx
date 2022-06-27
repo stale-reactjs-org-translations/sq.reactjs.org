@@ -144,7 +144,7 @@ export default function Nav() {
         <NextLink href="/">
           <a className="inline-flex text-l font-normal items-center text-primary dark:text-primary-dark py-1 mr-0 sm:mr-3 whitespace-nowrap">
             <Logo className="text-sm mr-2 w-8 h-8 text-link dark:text-link-dark" />
-            React Docs
+            Dokumentacioni i React
           </a>
         </NextLink>
         <div className="lg:w-full leading-loose hidden sm:flex flex-initial items-center h-auto pr-5 lg:pr-5 pt-0.5">
@@ -177,10 +177,10 @@ export default function Nav() {
       </div>
       <div className="px-0 pt-2 w-full 2xl:max-w-xs hidden lg:flex items-center self-center border-b-0 lg:border-b border-border dark:border-border-dark">
         <NavLink href="/" isActive={section === 'home'}>
-          Home
+          Kryefaqja
         </NavLink>
         <NavLink href="/learn" isActive={section === 'learn'}>
-          Learn
+          Mëso
         </NavLink>
         <NavLink href="/apis" isActive={section === 'apis'}>
           API

@@ -1,57 +1,57 @@
 ---
-title: Installation
+title: Instalimi
 ---
 
 <Intro>
 
-React has been designed from the start for gradual adoption. You can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to an HTML page, or start a complex React-powered app, this section will help you get started.
+React është projektuar që në fillim për adoptim gradual. Ju mund të përdorni aq pak ose aq shumë React sa ju nevojitet. Pavarësisht nëse dëshironi thjesht t'i hidhni një sy React, të shtoni pak interaktivitet në një faqe HTML ose të filloni një aplikacion kompleks të mundësuar nga React, ky seksion do t'ju ndihmojë si pikënisje.
 
 </Intro>
 
 <YouWillLearn isChapter={true}>
 
-* [How to add React to an HTML page](/learn/add-react-to-a-website)
-* [How to start a standalone React project](/learn/start-a-new-react-project)
-* [How to set up your editor](/learn/editor-setup)
-* [How to install React Developer Tools](/learn/react-developer-tools)
+* [Si të shtoni React në një faqe HTML](/learn/add-react-to-a-website)
+* [Si të filloni një projekt të pavarur React](/learn/start-a-new-react-project)
+* [Si të konfiguroni redaktorin tuaj](/learn/editor-setup)
+* [Si të instaloni "React Developer Tools"](/learn/react-developer-tools)
 
 </YouWillLearn>
 
-## Try React {/*try-react*/}
+## Provo React {/*try-react*/}
 
-You don't need to install anything to play with React. Try editing this sandbox!
+Nuk keni nevojë të instaloni asgjë për të luajtur pak me React. Provoni të redaktoni këtë sandbox!
 
 <Sandpack>
 
 ```js
-function Greeting({ name }) {
-  return <h1>Hello, {name}</h1>;
+function Përshëndetje({ emri }) {
+  return <h1>Çkemi, {emri}</h1>;
 }
 
 export default function App() {
-  return <Greeting name="world" />
+  return <Përshëndetje emri="Emilian" />
 }
 ```
 
 </Sandpack>
 
-You can edit it directly or open it in a new tab by pressing the "Fork" button in the upper right corner.
+Mund ta modifikoni drejtpërdrejt ose ta hapni në një skedë të re duke shtypur butonin "Fork" në këndin e sipërm djathtas.
 
-Most pages in the React documentation contain sandboxes like this. Outside of the React documentation, there are many online sandboxes that support React: for example, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), or [CodePen](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb).
+Shumica e faqeve në dokumentacionin React përmbajnë sandbox si ky. Jashtë dokumentacionit React, ka shumë sandboxe në internet që mbështesin React: për shembull, [CodeSandbox](https://codesandbox.io/s/new), [StackBlitz](https://stackblitz.com/fork/react), ose [CodePen](https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb).
 
-### Try React locally {/*try-react-locally*/}
+### Provo React në nivel lokal {/*try-react-locally*/}
 
-To try React locally on your computer, [download this HTML page](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html). Open it in your editor and in your browser!
+Për të provuar React në nivel lokal në kompjuterin tuaj, [shkarkoni këtë faqe HTML](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html). Hapeni atë në redaktorin tuaj dhe në browserin (shfletuesin) tuaj!
 
-## Add React to a page {/*add-react-to-a-page*/}
+## Shto React në një faqe {/*add-react-to-a-page*/}
 
-If you're working with an existing site and need to add a little bit of React, you can [add React with a script tag.](/learn/add-react-to-a-website)
+Nëse jeni duke punuar me një sajt ekzistues dhe duhet të shtoni "pak" React, ju mund të [shtoni React me një etiketë skripti.](/learn/add-react-to-a-website)
 
-## Start a React project {/*start-a-react-project*/}
+## Filloni një projekt React {/*start-a-react-project*/}
 
-If you're ready to [start a standalone project](/learn/start-a-new-react-project) with React, you can set up a minimal toolchain for a pleasant developer experience. You can also start with a framework that makes a lot of decisions for you out of the box.
+Nëse jeni gati të [filloni një projekt të pavarur](/learn/start-a-new-react-project) me React, mund të konfiguroni një toolchain minimal për një përvojë të këndshme zhvilluesi. Gjithashtu mund të filloni me një framework që merr shumë vendime për ju jashtë skemave.
 
-## Next steps {/*next-steps*/}
+## Hapat e ardhshëm {/*next-steps*/}
 
-Head to the [Quick Start](/learn) guide for a tour of the most important React concepts you will encounter every day.
+Drejtohuni te udhëzuesi [Fillim i Shpejtë](/learn) për një turne në konceptet më të rëndësishme të React që do të hasni çdo ditë.
 

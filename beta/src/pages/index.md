@@ -6,31 +6,31 @@ permalink: index.html
 
 <HomepageHero />
 
-## What is this site? {/*what-is-this-site*/}
+## Çfarë është kjo faqe? {/*what-is-this-site*/}
 
-We are rewriting the React documentation with a few differences:
+Ne po rishkruajmë dokumentacionin React me disa ndryshime:
 
-- All explanations are **written using Hooks** rather than classes.
-- We've added **interactive examples** and visual diagrams.
-- Guides include **challenges (with solutions!)** to check your understanding.
+- Të gjitha shpjegimet **janë shkruar duke përdorur Hooks** në vend të klasave.
+- Ne kemi shtuar **shembuj ndërveprues** dhe diagrame vizuale.
+- Udhëzuesit përfshijnë **sfida (me zgjidhje!)** për të kontrolluar të kuptuarit tuaj.
 
-This beta website contains the current draft of the new docs.
+Ky *website* beta përmban draftin aktual të dokumenteve të reja.
 
-## This is a work in progress! {/*this-is-a-work-in-progress*/}
+## Kjo është një punë në vazhdim e sipër! {/*this-is-a-work-in-progress*/}
 
-This is a **beta website**. There will be bugs, performance issues, and missing content.
+Ky është një *website* **beta**. Do të ketë *bugs* (defekte), probleme të performancës dhe përmbajtje që mungon.
 
-## How much content is ready? {/*how-much-content-is-ready*/}
+## Sa përmbajtje është gati? {/*how-much-content-is-ready*/}
 
-* [Learn React](/learn): ~70% finished.
-* [API Reference](/apis): ~20% finished.
+* [Mësoni React](/learn): ~70% e përfunduar.
+* [Referenca API](/apis): ~20% e përfunduar.
 
-You can track our progress [on GitHub](https://github.com/reactjs/reactjs.org/issues/3308).
+Ju mund të gjurmoni përparimin tonë [në GitHub](https://github.com/reactjs/reactjs.org/issues/3308).
 
-## How can I provide feedback? {/*how-can-i-provide-feedback*/}
+## Si mund të jap *feedback*? {/*how-can-i-provide-feedback*/}
 
-Please use [this GitHub issue](https://github.com/reactjs/reactjs.org/issues/3308) or [this anonymous form](https://www.surveymonkey.co.uk/r/Y6GH986) for high-level feedback. If you spot something that doesn't make sense, please tell us! Additionally, each page has thumbs up/down buttons in the corner.
+Ju lutemi përdorni [këtë GitHub issue](https://github.com/reactjs/reactjs.org/issues/3308) ose [këtë sondazh anonim](https://www.surveymonkey.co.uk/r/Y6GH986) për *feedback* të prioritet të lartë. Nëse vëreni diçka që nuk ka kuptim, ju lutemi na tregoni! Për më tepër, çdo faqe ka butonat e *pëlqej/nuk pëlqej* në cepin poshtë majtas. ku thotë *A ju ndihmon kjo?*
 
-## Will this site replace the main site? {/*will-this-site-replace-the-main-site*/}
+## A do të zëvendësojë ky *website*-in kryesor? {/*will-this-site-replace-the-main-site*/}
 
-We aim to switch this site to be the main one once we reach content parity with the [existing React documentation](https://reactjs.org/). The old React website will be archived at a subdomain so you'll still be able to access it. Old content links will redirect to the archived subdomain, which will have a notice about outdated content.
+Ne synojmë ta kthejmë këtë *website* në kryesorin, pasi të arrijmë një barazi në përmbajtje me [dokumentacionin ekzistues të React](https://reactjs.org/). *Website*-i i vjetër i React do të arkivohet në një nëndomen, kështu që ju do të jeni ende në gjendje ta përdorni atë. Lidhjet e përmbajtjes së vjetër do të ridrejtohen në nëndomenin e arkivuar, i cili do të ketë një njoftim për përmbajtjen e vjetëruar.

@@ -1,55 +1,54 @@
 ---
-title: Add React to a Website
+title: Shto React në një website
 ---
 
 <Intro>
 
-You don't have to build your whole website with React. Adding React to HTML doesn't require installation, takes a minute, and lets you start writing interactive components right away.
+Ju nuk keni pse të ndërtoni të gjithë website-in me React. Shtimi i React në HTML nuk kërkon instalim, zgjat një minutë dhe ju lejon të filloni menjëherë të shkruani komponentë ndërveprues.
 
 </Intro>
 
 <YouWillLearn>
 
-* How to add React to an HTML page in one minute
-* What is the JSX syntax and how to quickly try it
-* How to set up a JSX preprocessor for production
+* Si të shtoni React në një faqe HTML në një minutë
+* Çfarë është sintaksa JSX dhe si ta provoni menjëherë
+* Si të konfiguroni një preprocesor JSX për prodhim
 
 </YouWillLearn>
 
-## Add React in one minute {/*add-react-in-one-minute*/}
+## Shto React në një minutë {/*add-react-in-one-minute*/}
 
-React has been designed from the start for gradual adoption. Most websites aren't (and don't need to be) fully built with React. This guide shows how to add some “sprinkles of interactivity” to an existing HTML page.
+React është projektuar që në fillim për adoptim gradual. Shumica e faqeve të internetit nuk janë (dhe nuk kanë nevojë të jenë) plotësisht të ndërtuara me React. Ky udhëzues tregon se si të shtoni pak interaktivitet në një faqe ekzistuese HTML.
 
-Try this out with your own website or [an empty HTML file](https://gist.github.com/gaearon/edf814aeee85062bc9b9830aeaf27b88/archive/3b31c3cdcea7dfcfd38a81905a0052dd8e5f71ec.zip). All you need is an internet connection and a text editor like Notepad or VSCode. (Here's [how to configure your editor](/learn/editor-setup/) for syntax highlighting!)
+Provojeni këtë me faqen tuaj të internetit ose me një [skedar bosh HTML](https://gist.github.com/gaearon/edf814aeee85062bc9b9830aeaf27b88/archive/3b31c3cdcea7dfcfd38a81905a0052dd8e5f71ec.zip). Gjithçka që ju nevojitet është një lidhje interneti dhe një redaktues teksti si Notepad ose VSCode. (Ja se si të [konfiguroni redaktorin tuaj për theksimin e sintaksës!](/learn/editor-setup/) for syntax highlighting!)
 
-### Step 1: Add a root HTML tag {/*step-1-add-a-root-html-tag*/}
+### Hapi 1: Shtoni një etiketë HTML root (rrënjë) {/*step-1-add-a-root-html-tag*/}
 
-First, open the HTML page you want to edit. Add an empty `<div>` tag to mark the spot where you want to display something with React. Give this `<div>` a unique `id` attribute value. For example:
-
+Së pari, hapni faqen HTML që dëshironi të redaktoni.Shtoni një etiketë bosh `<div>` për të shënuar vendin ku dëshironi të shfaqni diçka me React. Jepini këtij `<div>` një `id` me vlerë të atributit unike . Për shembull:
 ```html {3}
-<!-- ... existing HTML ... -->
+<!-- ... HTML ekzistuese ... -->
 
 <div id="like-button-root"></div>
 
-<!-- ... existing HTML ... -->
+<!-- ... HTML ekzistuese ... -->
 ```
 
-It's called a "root" because it's where the React tree will start. You can place a root HTML tag like this anywhere inside the `<body>` tag. Leave it empty because React will replace its contents with your React component.
+Quhet "root" (rrënjë) sepse aty do të fillojë React tree (pema e React). Ju mund të vendosni një etiketë HTML root si kjo, kudo brenda etiketës `<body>`. Lëreni bosh sepse React do të zëvendësojë përmbajtjen e tij me komponentin tuaj React.
 
-You may have as many root HTML tags as you need on one page.
+Mund të keni aq etiketa HTML rrënjë sa ju nevojiten në një faqe.
 
-### Step 2: Add the script tags {/*step-2-add-the-script-tags*/}
+### Hapi 2: Shtoni etiketat e skriptit {/*step-2-add-the-script-tags*/}
 
-In the HTML page, right before the closing `</body>` tag, add three `<script>` tags for the following files:
+Në faqen HTML, menjëherë përpara etiketës `</body>` mbyllëse, shtoni tre etiketa `<script>` për skedarët e mëposhtëm:
 
-- [`react.development.js`](https://unpkg.com/react@18/umd/react.development.js) lets you define React components.
-- [`react-dom.development.js`](https://unpkg.com/react-dom@18/umd/react-dom.development.js) lets React render HTML elements to the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model).
-- **`like-button.js`** is where you'll write your component in the next step!
+- [`react.development.js`](https://unpkg.com/react@18/umd/react.development.js) ju lejon të përcaktoni komponentët React.
+- [`react-dom.development.js`](https://unpkg.com/react-dom@18/umd/react-dom.development.js) lejon që React të bëj render (gjeneroj) elementë HTML në [DOM].(https://developer.mozilla.org/docs/Web/API/Document_Object_Model).
+- **`like-button.js`** është vendi ku do të shkruani komponentin tuaj në hapin tjetër!
 
-Your HTML should now end like this:
+HTML juaj tani duhet të përfundojë kështu:
 
 ```html
-    <!-- end of the page -->
+    <!-- fundi i faqes -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="like-button.js"></script>
@@ -59,13 +58,13 @@ Your HTML should now end like this:
 
 <Gotcha>
 
-Before deploying to a live website, make sure to replace `development.js` with `production.min.js`! Development builds of React provide more helpful error messages, but slow down your website *a lot.*
+Përpara se të bëni *deploy* në një website *live*, sigurohuni që të zëvendësoni `development.js` me `production.min.js`! *Development build* të React japin mesazhe error më ndihmuese, por ngadalësojnë **goxha** website-in tuaj.
 
 </Gotcha>
 
-### Step 3: Create a React component {/*step-3-create-a-react-component*/}
+### Hapi 3: Krijoni një komponent React {/*step-3-create-a-react-component*/}
 
-Create a file called **`like-button.js`** next to your HTML page, add this code snippet, and save the file. This code defines a React component called `LikeButton`. (Learn more about making components in the [Quick Start!](/learn))
+Krijoni një skedar të quajtur **`like-button.js`** pranë faqes tuaj HTML, shtoni këtë copë kodi dhe ruajeni skedarin. Ky kod përcakton një komponent React të quajtur LikeButton.  (Mësoni më shumë rreth krijimit të komponentëve në [Nisje e shpejtë!](/learn))
 
 ```js
 'use strict';
@@ -87,9 +86,9 @@ function LikeButton() {
 }
 ```
 
-### Step 4: Add your React component to the page {/*step-4-add-your-react-component-to-the-page*/}
+### Hapi 4: Shtoni komponentin tuaj React në faqe {/*step-4-add-your-react-component-to-the-page*/}
 
-Lastly, add three lines to the bottom of **`like-button.js`**. These lines of code find the `<div>` you added to the HTML in the first step, create a React root, and then display the "Like" button React component inside of it:
+Së fundmi, shtoni tre rreshta në fund të **`like-button.js`**. Këto rreshta kodi gjejnë `<div>` që keni shtuar në HTML në hapin e parë, krijojnë një React root, dhe më pas shfaqin butonin "Like" komponent React brenda tij:
 
 ```js
 const rootNode = document.getElementById('like-button-root');
@@ -97,17 +96,17 @@ const root = ReactDOM.createRoot(rootNode);
 root.render(React.createElement(LikeButton));
 ```
 
-**Congratulations! You have just rendered your first React component to your website!**
+**Urime! Sapo keni bërë *render* komponentin tuaj të parë React në website-in tuaj!**
 
-- [View the full example source code](https://gist.github.com/gaearon/0b535239e7f39c524f9c7dc77c44f09e)
-- [Download the full example (2KB zipped)](https://gist.github.com/gaearon/0b535239e7f39c524f9c7dc77c44f09e/archive/651935b26a48ac68b2de032d874526f2d0896848.zip)
+- [Shikoni shembullin e plotë të kodit](https://gist.github.com/gaearon/0b535239e7f39c524f9c7dc77c44f09e)
+- [Shkarkoni shembullin e plotë (2KB zipped)](https://gist.github.com/gaearon/0b535239e7f39c524f9c7dc77c44f09e/archive/651935b26a48ac68b2de032d874526f2d0896848.zip)
 
-#### You can reuse components! {/*you-can-reuse-components*/}
+#### Ju mund të ripërdorni komponentët! {/*you-can-reuse-components*/}
 
-You might want to display React components in multiple places on the same HTML page. This is useful if React-powered parts of your page are separate from each other. You can do this by putting multiple root tags in your HTML and then rendering React components inside each of them with `ReactDOM.createRoot()`. For example:
+Ju mund të doni të shfaqni komponentët React në shumë vende në të njëjtën faqe HTML. Kjo është e dobishme nëse pjesët në faqen tuaj që janë me React, janë të ndara nga njëra-tjetra. Ju mund ta bëni këtë duke vendosur etiketa të shumta root në HTML-në tuaj dhe më pas duke bërë render komponentët React brenda secilit prej tyre me `ReactDOM.createRoot()`. Për shembull:
 
-1. In **`index.html`**, add an additional container element `<div id="another-root"></div>`.
-2. In **`like-button.js`**, add three more lines at the end:
+1. Në **`index.html`**, shtoni një element *container* shtesë `<div id="another-root"></div>`.
+2. Në **`like-button.js`**, shtoni tre rreshta të tjerë në fund:
 
 ```js {6,7,8,9}
 const anotherRootNode = document.getElementById('another-root');
@@ -115,41 +114,41 @@ const anotherRoot = ReactDOM.createRoot(anotherRootNode);
 anotherRoot.render(React.createElement(LikeButton));
 ```
 
-If you need to render the same component in many places, you can assign a CSS `class` instead of `id` to each root, and then find them all. Here is [an example that displays three "Like" buttons and passes data to each.](https://gist.github.com/gaearon/779b12e05ffd5f51ffadd50b7ded5bc8)
+Nëse ju duhet të bëni *render* të njëjtin komponent në shumë vende, mund të caktoni një CSS *class* (klasë) në vend të id-së për secilën *root*, dhe më pas t'i gjeni të gjitha. Këtu është [një shembull që shfaq tre butona "Like" dhe i kalon të dhënat secilit.](https://gist.github.com/gaearon/779b12e05ffd5f51ffadd50b7ded5bc8)
 
-### Step 5: Minify JavaScript for production {/*step-5-minify-javascript-for-production*/}
+### Hapi 5: *Minify* JavaScript për prodhim {/*step-5-minify-javascript-for-production*/}
 
-Unminified JavaScript can significantly slow down page load times for your users. Before deploying your website to production, it's a good idea to minify its scripts.
+JavaScript jo në version *minify* (e minimizuar) mund të ngadalësojë ndjeshëm kohën e ngarkimit të faqeve për përdoruesit tuaj. Përpara se të bëni *deploy* në prodhim website-in tuaj, është një ide e mirë të bëni *minify* (minimizoni) skriptet e saj.
 
-- **If you don't have a minification step** for your scripts, [here's one way to set it up](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
-- **If you already minify** your application scripts, your site will be production-ready if you ensure that the deployed HTML loads the versions of React ending in `production.min.js` like so:
+- **Nëse nuk keni marrë një hap t'i bëni *minify*** skriptet tuaja, [këtu është një mënyrë për ta konfiguruar](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
+- Nëse i keni bërë *minify* tashmë skriptet e aplikacionit tuaj, faqja juaj do të jetë gati për prodhim nëse siguroheni që HTML-ja në prodhim ngarkon versionet e React që përfundojnë me production.min.js si ky *script*:
 
 ```html
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 ```
 
-## Try React with JSX {/*try-react-with-jsx*/}
+## Provoni React me JSX {/*try-react-with-jsx*/}
 
-The examples above rely on features that are natively supported by browsers. This is why **`like-button.js`** uses a JavaScript function call to tell React what to display:
+Shembujt e mësipërm varen nga veçori që mbështeten nga *browsers* prej vetiu. Kjo është arsyeja pse **`like-button.js`** përdor një *function call* (thirrje funksioni) JavaScript për t'i treguar React se çfarë të shfaqë:
 
 ```js
 return React.createElement('button', {onClick: () => setLiked(true)}, 'Like');
 ```
 
-However, React also offers an option to use [JSX](/learn/writing-markup-with-jsx), an HTML-like JavaScript syntax, instead:
+Sidoqoftë, React ofron gjithashtu një opsion për të përdorur [JSX](/learn/writing-markup-with-jsx), një sintaksë JavaScript si HTML, në vend të kësaj:
 
 ```jsx
 return <button onClick={() => setLiked(true)}>Like</button>;
 ```
 
-These two code snippets are equivalent. JSX is popular syntax for describing markup in JavaScript. Many people find it familiar and helpful for writing UI code--both with React and with other libraries.
+Këto dy copëza kodi janë ekuivalente. JSX është një sintaksë e njohur për të përshkruar *markup*-in në JavaScript. Shumë personave i duket familjar dhe i dobishëm për të shkruar kod për UI—si me React ashtu dhe me librarit e tjera.
 
-> You can play with transforming HTML markup into JSX using [this online converter](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.17).
+> Ju mund të luani me transformimin e HTML *markup* në JSX duke përdorur [këtë konvertues online.](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.17).
 
-### Try JSX {/*try-jsx*/}
+### Provo JSX {/*try-jsx*/}
 
-The quickest way to try JSX is to add the Babel compiler as a `<script>` tag to the page. Put it before **`like-button.js`**, and then add `type="text/babel"` attribute to the `<script>` tag for **`like-button.js`**:
+Mënyra më e shpejtë për të provuar JSX është të shtoni kompilatorin Babel si një etiketë `<script>` tek faqja. Vendoseni përpara **`like-button.js`**, dhe më pas shtoni atributin `type="text/babel"` në etiketën `<script>` për **`like-button.js`**:
 
 ```html {3,4}
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -159,7 +158,7 @@ The quickest way to try JSX is to add the Babel compiler as a `<script>` tag to 
 </body>
 ```
 
-Now you can open **`like-button.js`** and replace
+Tani mund të hapësh **`like-button.js`** dhe ta zëvendësosh
 
 ```js
 return React.createElement(
@@ -171,7 +170,7 @@ return React.createElement(
 );
 ```
 
-with the equivalent JSX code:
+me kodin JSX ekuivalent:
 
 ```jsx
 return (
@@ -181,55 +180,55 @@ return (
 );
 ```
 
-It may feel a bit unusual at first to mix JS with markup, but it will grow on you! Check out [Writing Markup in JSX](/learn/writing-markup-with-jsx) for an introduction. Here is [an example HTML file with JSX](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html) that you can download and play with.
+Mund të duket paksa e pazakontë në fillim të përzieni JS me markup, por do të mësoheni! Hidhini një sy [Të shkruash Markup me JSX](/learn/writing-markup-with-jsx) për një hyrje. Këtu keni [një shembull skedari HTML me JSX](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html) të cilin mund ta shkarkoni dhe ta provoni.
 
 <Gotcha>
 
-The Babel `<script>` compiler is fine for learning and creating simple demos. However, **it makes your website slow and isn't suitable for production**. When you're ready to move forward, remove the Babel `<script>` tag and remove the `type="text/babel"` attribute you've added in this step. Instead, in the next section you will set up a JSX preprocessor to convert all your `<script>` tags from JSX to JS.
+Kompilatori `<script>` i Babel është i mirë për të mësuar dhe krijuar demonstrime të thjeshta. Sidoqoftë, **kjo e bën website-in tuaj të ngadaltë dhe nuk është e përshtatshme për prodhim**. Kur të jeni gati për të ecur përpara, hiqni etiketën `<script>` të Babel dhe hiqni atributin `type="text/babel"` që keni shtuar në këtë hap. Në vend të kësaj, në seksionin tjetër do të konfiguroni një paraprocesor JSX për të kthyer të gjitha etiketat tuaja `<script>` nga JSX në JS.
 
 </Gotcha>
 
-### Add JSX to a project {/*add-jsx-to-a-project*/}
+### Shtoni JSX në një projekt {/*add-jsx-to-a-project*/}
 
-Adding JSX to a project doesn't require complicated tools like a [bundler](/learn/start-a-new-react-project#custom-toolchains) or a development server. Adding a JSX preprocessor is a lot like adding a CSS preprocessor.
+Shtimi i JSX në një projekt nuk kërkon mjete të komplikuara si [bundler](/learn/start-a-new-react-project#custom-toolchains) apo një server zhvillimi. Shtimi i një paraprocesori JSX është i ngjashëm me shtimin e një paraprocesori CSS.
 
-Go to your project folder in the terminal, and paste these two commands (**Be sure you have [Node.js](https://nodejs.org/) installed!**):
+Shkoni te dosja e projektit tuaj në terminal dhe ngjitni (paste) këto dy komanda (**Sigurohuni që keni [Node.js](https://nodejs.org/) të instaluar!**):
 
-1. `npm init -y` (if it fails, [here's a fix](https://gist.github.com/gaearon/246f6380610e262f8a648e3e51cad40d))
+1. `npm init -y` (nëse dështon si komandë, [ja një zgjidhje](https://gist.github.com/gaearon/246f6380610e262f8a648e3e51cad40d))
 2. `npm install babel-cli@6 babel-preset-react-app@3`
 
-You only need npm to install the JSX preprocessor. You won't need it for anything else. Both React and the application code can stay as `<script>` tags with no changes.
+npm ju duhet vetëm për të instaluar paraprocesorin JSX. Nuk do t'ju duhet për asgjë tjetër. Si React ashtu edhe kodi i aplikacionit mund të qëndrojnë si etiketa `<script>` pa ndryshime.
 
-Congratulations! You just added a **production-ready JSX setup** to your project.
+Urime! Sapo keni shtuar një **konfigurim JSX gati për prodhim** në projektin tuaj.
 
-### Run the JSX Preprocessor {/*run-the-jsx-preprocessor*/}
+### Ekzekutoni paraprocesorin JSX {/*run-the-jsx-preprocessor*/}
 
-You can preprocess JSX so that every time you save a file with JSX in it, the transform will be re-run, converting the JSX file into a new, plain JavaScript file that the browser can understand. Here's how to set this up:
+Ju mund të përpunoni paraprakisht JSX në mënyrë që sa herë që ruani një skedar me JSX në të, transformimi do të riekzekutohet, duke e kthyer skedarin JSX në një skedar të ri JavaScript të thjeshtë që browser mund ta kuptojë. Ja se si ta konfiguroni këtë:
 
-1. Create a folder called **`src`**.
-2. In your terminal, run this command: `npx babel --watch src --out-dir . --presets react-app/prod ` (Don't wait for it to finish! This command starts an automated watcher for edits to JSX inside `src`.)
-3. Move your JSX-ified **`like-button.js`** ([it should look like this!](https://gist.githubusercontent.com/gaearon/1884acf8834f1ef9a574a953f77ed4d8/raw/dfc664bbd25992c5278c3bf3d8504424c1104ecf/like-button.js)) to the new **`src`** folder.
+1. Krijo një dosje të quajtur **`src`**.
+2. Në terminalin tuaj, ekzekutoni këtë komandë: `npx babel --watch src --out-dir . --presets react-app/prod ` (Mos prisni që të përfundojë! Kjo komandë nis një vëzhgues të automatizuar për modifikime në JSX brenda `src`.)
+3. Zhvendosni JSX-in tuaj **`like-button.js`** ([duhet të duket kështu!](https://gist.githubusercontent.com/gaearon/1884acf8834f1ef9a574a953f77ed4d8/raw/dfc664bbd25992c5278c3bf3d8504424c1104ecf/like-button.js)) në dosjen e re **`src`**.
 
-The watcher will create a preprocessed **`like-button.js`** with the plain JavaScript code suitable for the browser.
+Vëzhguesi do të krijojë një **`like-button.js`** të parapërpunuar me kodin e thjeshtë JavaScript të përshtatshëm për browser-in.
 
 <Gotcha>
 
-If you see an error message saying "You have mistakenly installed the `babel` package", you might have missed [the previous step](#add-jsx-to-a-project). Perform it in the same folder, and then try again.
+Nëse shihni një *error* që thotë "You have mistakenly installed the `babel` package" ("Keni instaluar gabimisht paketën `babel`"), mund të keni humbur [hapin e mëparshëm](#add-jsx-to-a-project). Kryeni atë në të njëjtën dosje dhe më pas provoni përsëri.
 
 </Gotcha>
 
-The tool you just used is called Babel, and you can learn more about it from [its documentation](https://babeljs.io/docs/en/babel-cli/). In addition to JSX, it lets you use the most recent JavaScript syntax features without worrying about breaking older browsers.
+Mjeti që sapo përdorët quhet Babel dhe mund të mësoni më shumë rreth tij nga [dokumentacioni i tij](https://babeljs.io/docs/en/babel-cli/). Përveç JSX, ju lejon të përdorni veçoritë më të fundit të sintaksës JavaScript pa u shqetësuar për prishjen e browser-ve të vjetër.
 
-If you're getting comfortable with build tools and want them to do more for you, [we cover some of the most popular and approachable toolchains here](/learn/start-a-new-react-project).
+Nëse ndiheni rehat me mjetet e ndërtimit dhe dëshironi që ata të bëjnë më shumë për ju, [ne përshkruajmë disa nga *toolchains* më të njohur dhe më të aksesueshëm këtu](/learn/start-a-new-react-project).
 
-<DeepDive title="React without JSX">
+<DeepDive title="React pa JSX">
 
-Originally JSX was introduced to make writing components with React feel as familiar as writing HTML. Since then, the syntax has become widespread. However, there may be instances where you do not want to use or cannot use JSX. You have two options:
+Fillimisht JSX u prezantua për të bërë shkrimin e komponentëve React të dukej po aq familjar sa shkrimi i HTML. Që atëherë, sintaksa është bërë e përhapur. Megjithatë, mund të ketë raste kur ju nuk dëshironi të përdorni ose nuk mund të përdorni JSX. Ju keni dy opsione:
 
-- Use a JSX alternative like [htm](https://github.com/developit/htm) which uses JavaScript [template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) instead of a compiler.
-- Use [`React.createElement()`](/apis/createelement) which has a special structure explained below.
+- Përdorni një alternativë JSX si [htm](https://github.com/developit/htm) e cila përdor JavaScript [*template strings*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) në vend të një kompilatori.
+- Përdorni [`React.createElement()`](/apis/createelement) e cila ka një strukturë të veçantë të shpjeguar më poshtë.
 
-With JSX, you would write a component like so:
+Me JSX, do të shkruanit një komponent si ky:
 
 ```jsx
 function Hello(props) {
@@ -240,7 +239,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Hello toWhat="World" />, );
 ```
 
-With `React.createElement()`, you would write it like this:
+Me `React.createElement()`, do ta shkruanit kështu:
 
 ```js
 function Hello(props) {
@@ -253,15 +252,18 @@ root.render(
 );
 ```
 
-It accepts several arguments: `React.createElement(component, props, ...children)`.
+Ai pranon disa argumente: `React.createElement(component, props, ...children)`.
 
-Here's how they work:
+Ja se si funksionojnë:
 
-1. A **component**, which can be a string representing an HTML element or a function component
-2. An object of any [**props** you want to pass](/learn/passing-props-to-a-component)
-3. The rest are **children** the component might have, such as text strings or other elements
+1. Një **komponent**, i cili mund të jetë një *string* (germëvarg) që përfaqëson një element HTML ose një komponent funksioni
+2. Një objekt i çdo [***props*** që dëshironi të kaloni](/learn/passing-props-to-a-component)
+3. Pjesa tjetër janë ***children*** (fëmijë*) që mund të ketë komponenti, si *string* (germëvarg) ose elementë të tjerë
 
-If you get tired of typing `React.createElement()`, one common pattern is to assign a shorthand:
+- Shënim: Një *fëmijë* është një element që është i lidhur me një element *prind* në pemën e dokumentit (*document tree*) dhe që përfshihet direkte nën të. Ne i përshkruajmë elementet në pemë si do të përshkruanim një pemë familjare. Ka paraardhës, pasardhës, prindër, fëmijë dhe vëllezër e motra.
+- Në React, *children* është një *prop* i veçantë, që kalon automatikisht në çdo komponent, që mund të përdoret për të bërë *render* përmbajtjen e përfshirë midis etiketave hapëse dhe mbyllëse kur thirret një komponent. Këto lloj komponentësh identifikohen nga dokumentacioni zyrtar si "boxes" (kutia).
+
+Nëse lodheni duke shkruar `React.createElement()`, një *pattern* (model) i zakonshëm është të caktoni një stenografi:
 
 ```js
 const e = React.createElement;
@@ -270,6 +272,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(e('div', null, 'Hello World'));
 ```
 
-Then, if you prefer this style, it can be just as convenient as JSX.
+Pastaj, nëse preferoni këtë stil, ai mund të jetë po aq i përshtatshëm sa JSX.
 
 </DeepDive>

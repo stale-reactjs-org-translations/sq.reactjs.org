@@ -1,20 +1,20 @@
 ---
-title: Community
+title: Komuniteti
 ---
 
 <Intro>
 
-React has a community of millions of developers. On this page we've listed some React-related communities that you can be a part of; see the other pages in this section for additional online and in-person learning materials.
+React ka një komunitet prej miliona zhvilluesish. Në këtë faqe ne kemi renditur disa komunitete të lidhura me React në të cilat mund të jeni pjesë; shikoni faqet e tjera në këtë seksion për materiale mësimore shtesë.
 
 </Intro>
 
-## Code of Conduct {/*code-of-conduct*/}
+## Kodi i Sjelljes {/*code-of-conduct*/}
 
-Before participating in React's communities, [please read our Code of Conduct](https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md). We have adopted the [Contributor Covenant](https://www.contributor-covenant.org/) and we expect that all community members adhere to the guidelines within.
+Përpara se të merrni pjesë në komunitetet e React, [ju lutemi lexoni kodin tonë të sjelljes](https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md). Ne kemi miratuar [Contributor Covenant](https://www.contributor-covenant.org/) dhe presim që të gjithë anëtarët e komunitetit t'u përmbahen udhëzimeve që ka aty.
 
 ## Stack Overflow {/*stack-overflow*/}
 
-Stack Overflow is a popular forum to ask code-level questions or if you're stuck with a specific error. Read through the [existing questions](https://stackoverflow.com/questions/tagged/reactjs) tagged with **reactjs** or [ask your own](https://stackoverflow.com/questions/ask?tags=reactjs)!
+Stack Overflow është një forum popullor për të bërë pyetje rreth programimit dhe mund të merrni ndihmë nëse keni ngecur me një gabim specifik. Lexoni [pyetjet ekzistuese](https://stackoverflow.com/questions/tagged/reactjs) etiketuar me **reactjs** ose [bëni pyetjen tuajën](https://stackoverflow.com/questions/ask?tags=reactjs)!
 
 <!--
 
@@ -33,6 +33,6 @@ Each community consists of many thousands of React users.
 
 -->
 
-## News {/*news*/}
+## Lajme {/*news*/}
 
-For the latest news about React, [follow **@reactjs** on Twitter](https://twitter.com/reactjs) and the [official React blog](/blog/) on this website.
+Për të rejat më të fundit rreth React, [ndiqni **@reactjs** në Twitter](https://twitter.com/reactjs) dhe [blog-un zyrtar të React](/blog/) në këtë *website*.
